@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title style="text-align:center">GROCERY LIST</title>
+  <style> 
+    h1 {
+    font-family: Times, 'Times New Roman', serif;
+    color: PINK;
+    
+    
+}
+    body {
+      display: flex above everything;
+      background-color:rgb(201, 27, 175);
+       justify-content: center;
+       align-items: center;
+      flex-direction: column;
+      
+      font-family: "Times New Roman", Times, serif;
+    } 
+
+.textinput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+  </style>
+  <script src="script.js"></script>
+</head>
+  <body onload="force();">
+    <h1>Grocery List</h1>
+    <p>Enter the foods that you want! In order to move an item subtract the number you want by 1 and enter it </p>
+    <br>
+    <br>
+    <div class="list">
+      <label>Item: <input type="text" id="foodsel"></label>
+      <button onclick = "DeleteanItem();">Delete a food item</button>
+      <button onclick = "Addanitem();">Add a food item </button>
+      <button onclick = "MoveUpandMoveDown(1);">Move an item down</button>
+      <button onclick = "MoveUpandMoveDown(-1);">Move an item up</button>
+        </div>
+    <div class="standard">
+      <div id="standard"></div>
+    </div>
+ 
+  </body>
+</html>
